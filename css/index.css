@@ -1,0 +1,374 @@
+/* reset */
+body,
+p,
+h3,
+h2 {
+  margin: 0;
+}
+h3,
+h2 {
+  font-weight: 500;
+}
+input {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+img {
+  border: none;
+  vertical-align: top;
+}
+a {
+  -webkit-tap-highlight-color: transparent;
+  text-decoration: none;
+}
+input {
+  -webkit-appearance: none;
+}
+/* LESS */
+/* 框架搭建 */
+html {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  font-size: 30px;
+}
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  overflow: auto;
+  font-size: 0.5rem;
+  font-family: Arial, Helvetica, STHeiTi, sans-serif;
+}
+header {
+  height: 1.85rem;
+  width: 100%;
+  display: flex;
+  display:-webkit-box;
+  background-color: #fabc09;
+  z-index: 999;
+  position: fixed;
+}
+header .suning_calss {
+	display: block;
+  width: 1.975rem;
+  height: 1.85rem;
+  background: url(../img/suning_class.jpg) no-repeat 0.575rem 0.275rem;
+  background-size: 0.775rem 1.35rem;
+  text-indent: -9999px;
+  overflow: hidden;
+}
+header .sunning_search {
+	-webkit-box-flex:1;
+  width: 12rem;
+  height: 1.3rem;
+  line-height: 1.3rem;
+  background-color: #d5dba9;
+  border-radius: 0.15rem;
+  margin-top: 0.35rem;
+  color: #a9a9a9;
+  padding-left: 1.25rem;
+  box-sizing: border-box;
+  position: relative;
+}
+header .sunning_search:before {
+  content: "";
+  position: absolute;
+  top: 0.25rem;
+  left: 0.4rem;
+  width: 0.55rem;
+  height: 0.6rem;
+  background: url(../img/suning_search.jpg) no-repeat;
+  background-size: 100%;
+}
+header .suning_shop {
+	display: block;
+  width: 2rem;
+  height: 1.85rem;
+  background: url(../img/suning_shop.jpg) no-repeat 0.4rem 0.2rem;
+  background-size: 1.225rem 1.4rem;
+}
+#scroller2{
+	position: relative;
+	height: 100%;
+}
+.main{
+	width: 16rem;
+	margin: 0 auto;
+	position: absolute;
+}
+.suning_slide {
+  margin-top: 1.85rem;
+  height: 6.8rem;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.suning_slide img {
+  width: 100%;
+}
+.suning_slide .slide_list {
+  position: absolute;
+  top: 6.2rem;
+  right: 0.4rem;
+}
+.suning_slide .slide_list li {
+  width: 0.25rem;
+  height: 0.25rem;
+  border-radius: 0.125rem;
+  background-color: #ccc;
+  float: left;
+  margin-left: 0.175rem;
+}
+.suning_slide .slide_list li.on {
+  background-color: #FABC09;
+}
+nav {
+  padding-top: 0.475rem;
+  overflow: hidden;
+  background-color: #cce3d1;
+  padding-bottom: 0.05rem;
+  border-bottom: 1px solid #fff;
+}
+nav a {
+  float: left;
+  width: 20%;
+  height: 2.85rem;
+  text-align: center;
+  padding-bottom: 0.225rem;
+  color: #7d8083;
+}
+nav a img {
+  width: 1.7rem;
+  height: 1.75rem;
+}
+nav span {
+  display: block;
+  line-height: 1.1rem;
+}
+.suning_title {
+  width: 100%;
+  height: 2.175rem;
+  background-color: #cce3d1;
+}
+.suning_title .suning_tit {
+  float: left;
+  width: 3.475rem;
+  height: 2.175rem;
+  background: url(../img/suning_title.jpg) no-repeat 0 0.55rem;
+  background-size: 3.075rem 1.025rem;
+}
+.suning_title .suning_line {
+  float: left;
+  width: 1px;
+  height: 0.875rem;
+  background-color: #97c1a0;
+  margin-top: 0.65rem;
+}
+.suning_title .suning_link {
+  float: left;
+  width: 11.25rem;
+  height: 1.35rem;
+  overflow: hidden;
+  margin: 0.35rem 0 0 0.775rem;
+}
+.suning_title .suning_link a {
+  display: block;
+  height: 1.35rem;
+  width: 11.25rem;
+  color: #211f20;
+}
+.suning_title .suning_link span {
+  display: block;
+  height: 0.7rem;
+  line-height: 0.7rem;
+  background: url(../img/suning_dot.jpg) no-repeat 0 0.3rem;
+  background-size: 0.15rem 0.15rem;
+  padding-left: 0.45rem;
+}
+.suning_title .suning_link span:nth-of-type(2) {
+  color: #a2a6a3;
+}
+.suning_seckill {
+  background-color: #cce3d1;
+  border-top: 1px solid #fff;
+}
+.suning_seckill .kill_t {
+  height: 1.35rem;
+  font-size: 0.35rem;
+  line-height: 0.45rem;
+}
+.suning_seckill .kill_t .seckill_logo {
+  float: left;
+  width: 3.7rem;
+  height: 1.35rem;
+  background: url(../img/suning_seckill.jpg) 0.4rem 0 no-repeat;
+  background-size: 2.925rem 1rem;
+}
+.suning_seckill .kill_t .seckill_tag {
+  float: left;
+  color: #f85251;
+  margin-top: 0.45rem;
+}
+.suning_seckill .kill_t .seckill_time {
+  float: left;
+  width: 3rem;
+  margin-top: 0.375rem;
+  color: #3b3b3a;
+}
+.suning_seckill .kill_t .seckill_time span {
+  border: 1px solid #809474;
+  float: left;
+  margin: 0 0.2rem;
+  border-radius: 0.1rem;
+}
+.suning_seckill .kill_t .seckill_time span:nth-of-type(3) {
+  border-color: #ff3639;
+  color: #ff3639;
+}
+.suning_seckill .kill_t .seckill_time i {
+  float: left;
+  font-style: normal;
+}
+.suning_seckill .kill_t .seckill_more {
+  float: right;
+  height: 0.725rem;
+  line-height: 0.725rem;
+  margin: 0.275rem 0.375rem 0 0;
+  padding-right: 0.425rem;
+  background: url(../img/suning_more.jpg) no-repeat right 0.1rem;
+  background-size: 0.375rem 0.625rem;
+}
+.suning_seckill .kill_t .seckill_more span {
+  display: block;
+  color: #577421;
+  padding: 0 0.2rem;
+  border-radius: 0.25rem;
+  background-color: #ffc001;
+  font-size: 0.45rem;
+}
+.suning_seckill .kill_b {
+  padding: 0.35rem 0 0 0.4rem;
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.suning_seckill .kill_b ul {
+ /* width: 200%;*/
+  overflow: hidden;
+}
+.suning_seckill .kill_b li {
+  width: 4.75rem;
+  float: left;
+  margin-right: 0.2rem;
+}
+.suning_seckill .kill_b li a {
+  display: block;
+  width: 4.7rem;
+  border: 1px solid #abc8a9;
+}
+.suning_seckill .kill_b li a img {
+  width: 100%;
+}
+.suning_seckill .kill_b .suning_price {
+  background: #ddd;
+  height: 1.425rem;
+  position: relative;
+}
+.suning_seckill .kill_b .suning_price p {
+  padding-left: 0.475rem;
+  font-size: 0.4rem;
+  color: #dd1111;
+  line-height: 0.7rem;
+}
+.suning_seckill .kill_b .suning_price del {
+  color: #09d9d9d;
+  font-size: 0.35rem;
+  padding-left: 0.375rem;
+  line-height: 0.55rem;
+}
+.suning_seckill .kill_b .suning_price .suning_sale {
+  position: absolute;
+  width: 1.475rem;
+  height: 1.6rem;
+  top: -0.15rem;
+  left: 3.1rem;
+  background: url(../img/suning_sale.jpg) no-repeat;
+  background-size: 100% ;
+  color: #fffafa;
+  padding-top: 0.25rem;
+  box-sizing: border-box;
+  font-size: 0.4rem;
+  text-align: center;
+}
+.suning_seckill .kill_b .suning_price .suning_sale span {
+  font-size: 0.5rem;
+}
+.suning_djh {
+  background-color: #ccc;
+  padding-top: 0.475rem;
+}
+.suning_djh h2 {
+  text-align: center;
+  height: 1.25rem;
+  line-height: 1.25rem;
+  width: 100%;
+  font-size: 0.6rem;
+  color: #fe3955;
+  background-color: #fff;
+  border-bottom: 1px solid #bedcc4;
+}
+.suning_djh .djh_box {
+  overflow: hidden;
+}
+.suning_djh a {
+  float: left;
+  margin-right: 1px;
+  width: 3.95rem;
+  height: 5.4rem;
+}
+.suning_djh a:nth-of-type(1) {
+  width: 7.95rem;
+  height: 8.55rem;
+}
+.suning_djh a:nth-of-type(2) {
+  width: 7.95rem;
+  height: 3.075rem;
+  margin-bottom: 1px;
+}
+.suning_djh a img {
+  width: 100%;
+}
+.suning_download {
+  margin-top: 0.375rem;
+}
+.suning_download a {
+  display: block;
+  width: 16rem;
+}
+.suning_download a img {
+  width: 100%;
+}
+footer {
+  margin-top: 0.375rem;
+  background-color: #cbe3d1;
+}
+footer a {
+  width: 20%;
+  float: left;
+  text-align: center;
+  color: #1a181b;
+  height: 2.1rem;
+  line-height: 2.1rem;
+}
+footer p {
+  text-align: center;
+  color: #929493;
+  padding-bottom: 1rem;
+}
